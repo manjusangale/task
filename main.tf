@@ -5,11 +5,12 @@ provider "aws" {
 }
 
 
-resource "aws_instance" "myec2" {
-    ami = "ami-0fd05997b4dff7aac"
+resource "aws_instance" "terraform" {
+    ami = "ami-03c68e52484d7488f"
     instance_type = "t2.micro"
     
     tags = {
         Name = "terraform"
     }
 }
+
